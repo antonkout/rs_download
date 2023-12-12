@@ -1,0 +1,10 @@
+name: rs-download
+
+channels:
+  - conda-forge
+  - defaults
+  - terradue
+
+dependencies:
+  - python=3.8
+  - poetry

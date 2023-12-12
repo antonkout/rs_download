@@ -1,0 +1,29 @@
+[tool.poetry]
+name = " rs-download "
+version = "0.1.0"
+description = "This module downloads products from sentinels"
+authors = ["Antonios Koutroumpas <antonkout@gmail.com>"]
+license = "Copyright 2022 AntonKout, all rights reserved."
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+sentinelsat = "1.2.1"
+creodias-finder = { git = "https://github.com/DHI-GRAS/creodias-finder.git" }
+fiona = "1.8.22"
+folium = "0.14.0"
+requests = "*"
+loguru = "*"
+pathlib = "*"
+google-cloud-bigquery = "2.31.0"
+google-auth = "2.3.3"
+pandas = "1.3.4"
+shapely = "<2.0.0"
+pyarrow = "14.0.1"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
